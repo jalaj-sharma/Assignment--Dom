@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse out event listener</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #box{
+            width: 20rem;
+            background-color: green;
+            cursor: pointer;
+            color: white;
+            text-align: center;
+            font-size: 25px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <p class="clickme">Safe zone😊</p>
+    </div>
+</body>
+<script>
+    const boxElement = document.getElementById("box")
+
+    boxElement.addEventListener("mouseout",function (){
+        alert("you are in the safe zone 😊👍")
+    })
+</script>
+</html>
